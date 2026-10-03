@@ -8,7 +8,7 @@ Plataforma web para gestão de cadastro de voluntários, doações e divulgaçã
 ## 🚀 Tecnologias Utilizadas
 * HTML5 / CSS3
 * JavaScript
-* C
+* Python
 
 ## 👥 Desenvolvedores
 * Michael Willians
