@@ -1,31 +1,57 @@
-# Site — Associação Cruzada pela Dignidade
+# Site institucional — Associação Cruzada pela Dignidade
 
-Protótipo acadêmico de site institucional em página única, responsivo, com seção de apresentação, atuação social e simulação de doação via Pix.
+## 1. Sobre o projeto
 
-## Arquivos
+Este projeto faz parte de uma atividade extensionista voltada à Associação Cruzada pela Dignidade, em Anápolis, Goiás.
 
-- `index.html` — estrutura e conteúdo da página.
-- `style.css` — estilos, cores e adaptação para dispositivos móveis.
-- `script.js` — menu mobile, seleção de valor, simulação e botão de cópia.
+Durante o levantamento das necessidades da instituição, foi identificada a importância de melhorar a organização das informações e a divulgação das atividades realizadas.
 
-## Como visualizar
+A proposta é utilizar a tecnologia para apoiar a instituição e facilitar o acesso às informações sobre seu trabalho.
 
-Abra `index.html` no navegador. Para publicar com GitHub Pages:
+## 2. Objetivo desta versão
 
-1. Entre no repositório `Sistema-cruzada-dignidade` no GitHub.
-2. Clique em **Add file → Upload files**.
-3. Envie `index.html`, `style.css` e `script.js` para a pasta raiz do repositório (não envie a pasta compactada como substituto desses arquivos).
-4. Clique em **Commit changes**.
-5. Abra **Settings → Pages**.
-6. Em **Build and deployment**, selecione **Deploy from a branch**, escolha a branch principal (normalmente `main`) e a pasta **/(root)**. Salve.
-7. Aguarde a publicação indicada pelo GitHub Pages.
+Esta versão corresponde a um protótipo de site institucional. O objetivo é apresentar a associação, organizar as informações em uma única página e demonstrar como a área de doações poderia funcionar.
 
-Se já houver arquivos com esses nomes, faça uma cópia de segurança antes de substituí-los.
+O site é uma etapa inicial e não representa a implementação completa do sistema de gestão previsto no projeto.
 
-## Importante sobre a demonstração Pix
+## 3. Funcionalidades implementadas
 
-A seção Pix é somente uma demonstração visual para o projeto acadêmico. O QR é ilustrativo e o texto `SIMULACAO-PIX-...` não é um código Pix válido. Nenhum pagamento é enviado ou confirmado. Antes de publicar para o público, substitua textos provisórios e confirme com a instituição os canais oficiais, logotipo, imagens, programas e dados de contato.
+- Página institucional com apresentação e informações sobre a atuação social.
+- Layout adaptável a computadores e dispositivos móveis.
+- Navegação e interações desenvolvidas com JavaScript.
+- Área demonstrativa de doação via Pix, com seleção de valores e botão de cópia.
 
-## Personalização pendente
+## 4. Tecnologias utilizadas
 
-O conteúdo institucional inicial foi redigido com base no escopo descrito no relatório do projeto. Confirme as informações com a Associação Cruzada pela Dignidade antes da publicação definitiva. O site não possui banco de dados, painel administrativo ou integração bancária.
+- **HTML5:** estrutura e conteúdo da página.
+- **CSS3:** estilos, cores e adaptação para diferentes telas.
+- **JavaScript:** interações e funcionalidades demonstrativas.
+- **GitHub:** armazenamento e controle de versões do código.
+- **GitHub Pages:** publicação do site para acesso pelo navegador.
+
+## 5. Como executar
+
+1. Baixe ou clone os arquivos deste repositório.
+2. Mantenha `index.html`, `style.css` e `script.js` na mesma pasta.
+3. Abra `index.html` em um navegador para visualizar a página.
+
+O projeto pode ser publicado pelo GitHub Pages, utilizando a branch principal e a pasta raiz do repositório.
+
+## 6. Limitações desta versão
+
+A funcionalidade Pix é apenas ilustrativa. O QR Code e o texto de demonstração não representam uma cobrança válida, e nenhum pagamento é processado ou confirmado.
+
+Esta versão também não possui banco de dados, cadastro funcional de voluntários, painel administrativo ou integração com serviços bancários.
+
+Os textos, contatos, imagens e demais informações institucionais devem ser conferidos e aprovados pela associação antes de uma publicação definitiva.
+
+## 7. Próximas etapas
+
+- Validar o conteúdo e as informações institucionais com a associação.
+- Testar a navegação em computadores e celulares.
+- Alinhar com a equipe quais funcionalidades farão parte das próximas entregas.
+- Avaliar integrações reais somente após a definição dos requisitos e a aprovação institucional.
+
+## 8. Considerações finais
+
+Este repositório registra uma versão inicial do site e permite acompanhar sua evolução ao longo do projeto extensionista. As funcionalidades e melhorias futuras dependerão dos requisitos definidos pela equipe e das necessidades confirmadas com a instituição.
