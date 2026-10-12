@@ -62,12 +62,11 @@ Sistema-cruzada-dignidade/
 Antes de considerar a versão pronta, recomenda-se:
 
 1. Conferir se os links do menu levam a seções que realmente existem.
-2. Padronizar a classe da navegação no HTML e no CSS (o relatório registra divergência entre `.nav` e `.navbar`).
+2. A classe da navegação no HTML e no CSS (o relatório registra divergência entre `.nav` e `.navbar`).
 3. Confirmar o caminho e a exibição do arquivo da logo.
-4. Verificar se `script.js` existe, está vinculado corretamente e funciona como esperado.
 5. Testar a página em computador e celular.
 6. Não publicar dados pessoais, sensíveis ou informações internas da associação sem autorização.
-7. Confirmar com a instituição os dados e o QR Code Pix antes de disponibilizá-los.
+7. Confirmar com a instituição os dados e o QR Code Pix antes da disponibilização.
 8. Registrar evidências reais dos testes e, quando aplicável, da validação pela instituição.
 
 ## Como executar localmente
@@ -84,12 +83,12 @@ Conforme o relatório técnico da Sprint 01:
 
 - O código inicial em HTML e CSS foi considerado na revisão.
 - A verificação completa da página publicada, da navegação, da logo, da responsividade e das interações permanece pendente de evidência.
-- Capturas de tela de testes em computador e celular devem ser adicionadas somente depois de os testes serem realizados.
+- Capturas de tela de testes em computador e celular devem ser adicionadas somente depois dos testes serem realizados.
 - A validação formal pela Associação Cruzada pela Dignidade não deve ser afirmada sem registro correspondente.
 
 ## Transparência sobre o desenvolvimento
 
-Este projeto faz parte de uma atividade acadêmica extensionista. Ferramentas de inteligência artificial foram utilizadas como apoio na elaboração de código e/ou documentação. O uso dessas ferramentas deve ser informado de acordo com as orientações da instituição de ensino e acompanhado de revisão humana. A descrição do repositório não substitui a conferência do código, os testes ou a validação do trabalho pela equipe e pela instituição parceira.
+Este projeto faz parte de uma atividade acadêmica extensionista. Ferramentas de inteligência artificial foram utilizadas como apoio na elaboração de código e/ou documentação.
 
 ## Equipe
 
@@ -100,15 +99,15 @@ Os integrantes registrados na documentação do projeto são:
 - Warley da Silva Oliveira — `KMixzy`
 - Ana Clara Nascimento Marques — `anaclarnascimentomarques-bot`
 
-## Próximas etapas sugeridas
+## Próximas etapas do projeto
 
 - Completar e revisar as seções institucionais.
 - Corrigir e testar os links de navegação e os caminhos dos recursos.
-- Verificar o JavaScript e implementar somente as interações planejadas.
+- Verificar o uso de JavaScript e implementar somente as interações planejadas.
 - Testar a responsividade em diferentes telas.
 - Confirmar e autorizar as informações de doação com a instituição.
 - Anexar evidências reais de execução e validação.
-- Atualizar este README à medida que as funcionalidades forem efetivamente implementadas.
+- Atualizar README à medida que as funcionalidades forem efetivamente implementadas.
 
 ---
 
