@@ -1,0 +1,55 @@
+:root {
+    --main-color: #cf8632;
+    --black-color: #000;
+    --cor-fundo: #4A2E18;
+    --cor-bloco: #E28821;
+    --cor-pessoas-texto: #E89E70;
+    --cor-dignidade: #F4E2B8;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    font-size: 10px;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: linear 0.2s;
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+}
+
+.header section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem ;
+    padding-bottom: 1.5rem ;
+
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: var(--cor-dignidade);
+}
