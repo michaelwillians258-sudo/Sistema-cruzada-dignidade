@@ -1,15 +1,11 @@
 :root {
-    --main-color: #cf8632;
+    --main-color: #b48b22;
     --black-color: #000;
-    --cor-fundo: #4A2E18;
-    --cor-bloco: #E28821;
-    --cor-pessoas-texto: #E89E70;
-    --cor-dignidade: #F4E2B8;
-    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    --bg: hsl(25, 60%, 12%);
+    --border: 0.1rem solid rgb(223, 206, 198);
     font-size: 10px;
 
 }
-
 
 * {
     margin: 0;
@@ -19,37 +15,98 @@
     text-decoration: none;
     text-transform: capitalize;
     transition: linear 0.2s;
+    font-family: "Cormorant Garamond", serif;
 }
 
-body{
-    background-color: var(--cor-fundo);
+body {
+    background-color: var(--bg);
 }
-section{
-    max-width: 1200px;
-    margin: 0 auto;
+
+section {
+
     padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 99;
+    background: #d9932b95;
     border-bottom: var(--border);
 }
 
-.header section{
+.header section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 1.5rem ;
-    padding-bottom: 1.5rem ;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 
 }
 
 .navbar a {
-    margin: 0 1rem;
+    margin: 0.1rem;
     font-size: 1.8rem;
-    color: var(--cor-dignidade);
+    color: #F4E2B8;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    background: var(--main-color);
+    color: #fffaee;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.home-conteiner {
+    background: url(Árvore\ Noturna\ com\ Lanternas\ Douradas\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home-conteiner section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.content{
+    max-width: 60rem;
+}
+
+.content h3 {
+    color: #fffaee;
+    font-size: 2.5rem;
+}
+.content p {
+    color: #fffaee;
+    font-size: 2.1rem;
+    font-weight: 100;
+    line-height: 1.9;
+    padding: 1rem 0;
+
 }
