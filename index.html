@@ -25,7 +25,7 @@
                 <a href="#home">Início</a>
                 <a href="#about">Sobre</a>
                 <a href="#projects">Projetos</a>
-                <a href="#parceirias">Parceirias</a>
+                <a href="#parcerias">Parcerias</a>
                 <a href="#contact">Contatos</a>
             </nav>
 
@@ -82,7 +82,7 @@
         <div class="box-container">
             <div class="box">
                 <img src="projeto1.png" alt="projeto-1">
-                <h3>"Eu Sou do Bem, Eu Sou de Deus"</h3>
+                <h3>"Eu Sou do Bem, Eu Sou de Deus" Ação que transforma.</h3>
                 <div class="projeto">Em 2014, a Associação Cruzada pela Dignidade lançou a campanha permanente
                     <span>“Eu sou do Bem, eu sou de Deus”</span> com a missão de inspirar a prática de boas ações e
                     fortalecer princípios, virtudes e valores essenciais para a convivência em sociedade.
@@ -101,7 +101,7 @@
 
             <div class="box">
                 <img src="projeto2.png" alt="projeto-2">
-                <h3>Caminhada Caminhada pela Paz nas Escolas: Ação que envolve escolas, famílias e respeito</h3>
+                <h3>Caminhada Caminhada pela Paz nas Escolas: Ação que envolve escolas, famílias e respeito.</h3>
                 <div class="projeto">
                     <span>Promover a cultura de paz nas escolas por meio da mobilização de estudantes,
                         famílias, educadores e lideranças comunitárias e religiosas, incentivando a empatia, o respeito
@@ -203,7 +203,7 @@
         </div>
     </section>
 
-    <search class="parceirias"></search>c
+    <search class="parcerias"></search>
 
 
     <dialog id="modal">
@@ -217,7 +217,6 @@
         const titulo = document.getElementById('modal-titulo');
         const texto = document.getElementById('modal-texto');
 
-        // ao clicar em "Saiba Mais" de um card, copia o título e o texto dele para o modal
         document.querySelectorAll('.box .btn').forEach(botao => {
             botao.addEventListener('click', () => {
                 const box = botao.closest('.box');
@@ -227,15 +226,116 @@
             });
         });
 
-        // fechar no X
         document.getElementById('fechar').addEventListener('click', () => modal.close());
 
-        // fechar clicando fora da caixa
         modal.addEventListener('click', e => {
             if (e.target === modal) modal.close();
         });
     </script>
 
+    <section class="parcerias" id="parcerias">
+        <h2 class="title">Nossos <span>Parceiros</span></h2>
+
+        <div class="carousel">
+            <div class="track">
+
+                <!-- conjunto 1 -->
+                <div class="partner">
+                    <img src="parceiro1.png" alt="Parceiro 1">
+                    <h3>ONG Amor ao Próximo Anápolis</h3>
+                    <p>Porque fazer o bem faz bem!</p>
+                </div>
+                <div class="partner">
+                    <img src="parceiro2.png" alt="Parceiro 2">
+                    <h3>Câmara Municipal de Anápolis</h3>
+                    <p>Poder público e sociedade unidos pela família, pela cidadania e pela dignidade.</p>
+                </div>
+                <div class="partner">
+                    <img src="parceiro3.png" alt="Parceiro 3">
+                    <h3>Sesi - Unidade Jaiara</h3>
+                    <p>Educação, união e dignidade: juntos pela força da família!</p>
+                </div>
+                <div class="partner">
+                    <img src="parceiro4.png" alt="Parceiro 4">
+                    <h3>Juizado da Infância e Juventude de Anápolis</h3>
+                    <p>Uma sociedade unida, uma família fortalecida, um futuro com dignidade.</p>
+                </div>
+
+                <!-- conjunto 2 (cópia) -->
+                <div class="partner" aria-hidden="true"><img src="parceiro1.png" alt="">
+                    <h3>ONG Amor ao Próximo Anápolis</h3>
+                    <p>Porque fazer o bem faz bem!</p>
+                </div>
+                <div class="partner" aria-hidden="true"><img src="parceiro2.png" alt="">
+                    <h3>Câmara Municipal de Anápolis</h3>
+                    <p>Poder público e sociedade unidos pela família, pela cidadania e pela dignidade.</p>
+                </div>
+                <div class="partner" aria-hidden="true"><img src="parceiro3.png" alt="">
+                    <h3>Sesi - Unidade Jaiara</h3>
+                    <p>Educação, união e dignidade: juntos pela força da família!</p>
+                </div>
+                <div class="partner" aria-hidden="true"><img src="parceiro4.png" alt="">
+                    <h3>Juizado da Infância e Juventude de Anápolis</h3>]
+                    <p>Uma sociedade unida, uma família fortalecida, um futuro com dignidade.</p>
+                </div>
+
+                <!-- conjunto 3 (cópia) -->
+                <div class="partner" aria-hidden="true"><img src="parceiro1.png" alt="">
+                    <h3>ONG Amor ao Próximo Anápolis</h3>
+                    <p>Porque fazer o bem faz bem!</p>
+                </div>
+                <div class="partner" aria-hidden="true"><img src="parceiro2.png" alt="">
+                    <h3>Câmara Municipal de Anápolis</h3>
+                    <p>Poder público e sociedade unidos pela família, pela cidadania e pela dignidade.</p>
+                </div>
+                <div class="partner" aria-hidden="true"><img src="parceiro3.png" alt="">
+                    <h3>Sesi - Unidade Jaiara</h3>
+                    <p>Educação, união e dignidade: juntos pela força da família!</p>
+                </div>
+                <div class="partner" aria-hidden="true"><img src="parceiro4.png" alt="">
+                    <h3>Juizado da Infância e Juventude de Anápolis</h3>]
+                    <p>Uma sociedade unida, uma família fortalecida, um futuro com dignidade.</p>
+                </div>
+
+                <!-- conjunto 4 (cópia) -->
+                <div class="partner" aria-hidden="true"><img src="parceiro1.png" alt="">
+                    <h3>ONG Amor ao Próximo Anápolis</h3>
+                    <p>Porque fazer o bem faz bem!</p>
+                </div>
+                <div class="partner" aria-hidden="true"><img src="parceiro2.png" alt="">
+                    <h3>Câmara Municipal de Anápolis</h3>
+                    <p>Poder público e sociedade unidos pela família, pela cidadania e pela dignidade.</p>
+                </div>
+                <div class="partner" aria-hidden="true"><img src="parceiro3.png" alt="">
+                    <h3>Sesi - Unidade Jaiara</h3>
+                    <p>Educação, união e dignidade: juntos pela força da família!</p>
+                </div>
+                <div class="partner" aria-hidden="true"><img src="parceiro4.png" alt="">
+                    <h3>Juizado da Infância e Juventude de Anápolis</h3>]
+                    <p>Uma sociedade unida, uma família fortalecida, um futuro com dignidade.</p>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="title"> Nosso <span>Endereço</span></h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.898826727529!2d-48.961968924977285!3d-16.32811298438953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ea47841e7b47d%3A0xc0b361a1d82da24c!2sCruzada%20pela%20Dignidade!5e0!3m2!1spt-BR!2sbr!4v1792874062024!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+
+    <section class="footer">
+    <div class="share"> 
+        <a href="https://www.instagram.com/cruzadapeladignidade/">
+             <img width="96" height="96" src="https://img.icons8.com/softteal-color/96/instagram-new.png" alt="instagram-new"/></a>
+        <a href="https://api.whatsapp.com/send/?phone=5562991064602&text=Ol%C3%A1%2C+quero+falar+com+a+Cruzada+Pela+Dignidade&type=phone_number&app_absent=0">
+            <img width="96" height="96" src="https://img.icons8.com/retro/96/whatsapp.png" alt="whatsapp"/>
+        </a>
+    </div>
+    </section>
+   
 </body>
 
 </html>
