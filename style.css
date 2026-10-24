@@ -1,7 +1,7 @@
 :root {
     --main-color: #b48b22;
     --black-color: #000;
-    --bg: hsl(25, 60%, 12%);
+    --bg: oklab(25.094% 0.01934 0.03694);
     --border: 0.1rem solid rgb(223, 206, 198);
     font-size: 10px;
 
@@ -23,7 +23,6 @@ body {
 }
 
 section {
-
     padding: 3rem 2rem;
     margin: 0 auto;
     max-width: 1200px;
@@ -35,7 +34,7 @@ section {
     left: 0;
     right: 0;
     z-index: 99;
-    background: #d9932b95;
+    background: #8f611c;
     border-bottom: var(--border);
 }
 
@@ -52,6 +51,7 @@ section {
     margin: 0.1rem;
     font-size: 1.8rem;
     color: #F4E2B8;
+    padding: 0.6rem;
 }
 
 .navbar a:hover {
@@ -81,27 +81,32 @@ section {
     display: inline-block;
 }
 
+.btn:hover {
+    letter-spacing: 0.2rem;
+}
+
 .home-conteiner {
     background: url(Árvore\ Noturna\ com\ Lanternas\ Douradas\ \(1\).jpg);
     background-position: center;
     background-size: cover;
 }
 
-.home-conteiner section{
+.home-conteiner section {
     display: flex;
     align-items: center;
     min-height: 100vh;
 
 }
 
-.content{
-    max-width: 60rem;
+.content {
+    max-width: 62rem;
 }
 
 .content h3 {
     color: #fffaee;
     font-size: 2.5rem;
 }
+
 .content p {
     color: #fffaee;
     font-size: 2.1rem;
@@ -109,4 +114,142 @@ section {
     line-height: 1.9;
     padding: 1rem 0;
 
+}
+
+.title {
+    font-size: 4rem;
+    color: #F4E2B8;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+
+.title span {
+    color: #fffaee;
+    text-transform: uppercase;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background-color: oklab(25.029% 0.02339 0.03539);
+}
+
+.about .row .content {
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: aliceblue;
+
+}
+
+.about .row .content p {
+    font-size: 1.8rem;
+    color: #fffaee;
+    padding: 1rem;
+
+}
+
+.body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 24px 0;
+    background: #f4f4f7;
+}
+
+.projects .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
+
+}
+
+.projects .box-container .box{
+    text-align: center;
+    border: 0.1rem solid #f4f4f7;
+    padding: 1rem;
+    width: 100%;
+    max-width: 40rem; /* evita cards enormes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box img{
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;   
+}
+
+.projects .box-container .box h3{
+    color:#F4E2B8 ;
+    font-size:2.5rem;
+    padding: 1rem 0.5rem;
+}
+
+.projects .box-container .box .btn {
+    margin-top: auto;
+}
+.projects .box-container .box .projeto{
+    color:#fffaee;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+.projects .box-container .box:hover{
+    background-color: #b48b22;
+}
+
+.projects .box-container .box:hover>*{
+    color: #000;
+}
+
+/* esconde o texto completo dentro dos cards */
+.projects .box-container .box .projeto {
+    display: none;
+}
+
+/* caixa do modal */
+#modal {
+    margin: auto;
+    width: 90%;
+    max-width: 80rem;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 3rem;
+    background: oklab(25.029% 0.02339 0.03539);
+    border: 0.2rem solid var(--main-color);
+    color: #fffaee;
+    text-transform: none;
+    position: relative;
+}
+
+/* fundo escurecido atrás */
+#modal::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#modal h3 {
+    font-size: 3rem;
+    color: #F4E2B8;
+    margin-bottom: 1.5rem;
+}
+
+#modal-texto {
+    font-size: 2rem;
+    line-height: 1.7;
+    text-transform: none;
+}
+
+#fechar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    color: #fffaee;
+    font-size: 4rem;
+    cursor: pointer;
 }
