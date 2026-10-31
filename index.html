@@ -26,6 +26,7 @@
                 <a href="#about">Sobre</a>
                 <a href="#projects">Projetos</a>
                 <a href="#parcerias">Parcerias</a>
+                <a href="#doacoes">Doações</a>
                 <a href="#contact">Contatos</a>
             </nav>
 
@@ -322,6 +323,77 @@
         </div>
     </section>
 
+    <!-- ========== SEÇÃO DOAÇÕES ========== -->
+<section class="doacoes" id="doacoes">
+    <div class="doacoes-header">
+        <p class="doacoes-subtitle">JUNTOS FAZEMOS A DIFERENÇA</p>
+        <h2 class="doacoes-title">DOAÇÕES</h2>
+        <p class="doacoes-desc">
+            Sua contribuição fortalece nossos projetos e ajuda a transformar vidas.
+            Escolha a forma que for mais prática para você e faça parte dessa corrente do bem.
+        </p>
+    </div>
+
+    <div class="doacoes-tabs">
+        <!-- Botões das abas -->
+        <div class="tabs-nav">
+            <button class="tab-btn active" data-tab="qrcode">Doação via QR Code</button>
+            <button class="tab-btn" data-tab="valor">Escolha o valor da doação</button>
+        </div>
+
+        <!-- Conteúdo das abas -->
+        <div class="tabs-content">
+            <!-- ABA 1: QR Code -->
+            <div class="tab-pane active" id="tab-qrcode">
+                <div class="doacao-card">
+                    <div class="card-icon">✦</div>
+                    <h3>Doação via QR Code</h3>
+
+                    <!-- Placeholder do QR Code (troque pela imagem real depois) -->
+                    <div class="qr-placeholder">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=00020126580014BR.GOV.BCB.PIX0136123e4567-e12b-12d1-a456-426614174000520400005303986540510.005802BR5913CruzadaDignidade6008Anapolis62070503***6304ABCD" 
+                             alt="QR Code Pix - Demonstração" width="180" height="180">
+                        <p class="qr-note">QR Code de demonstração</p>
+                    </div>
+
+                    <p class="card-instruction">
+                        Escaneie o QR Code com o aplicativo do seu banco ou utilize o Pix Copia e Cola.
+                    </p>
+
+                    <button class="btn btn-doacao" id="btn-copiar-pix">
+                        Copiar código Pix
+                    </button>
+                </div>
+            </div>
+
+            <!-- ABA 2: Valor personalizado -->
+            <div class="tab-pane" id="tab-valor">
+                <div class="doacao-card">
+                    <div class="card-icon">✦</div>
+                    <h3>Escolha o valor da doação</h3>
+
+                    <div class="valor-personalizado">
+                        <label for="valor-custom">Valor personalizado (R$)</label>
+                        <input type="number" id="valor-custom" placeholder="0,00" min="1" step="0.01">
+                    </div>
+
+                    <p class="valores-sugeridos-label">VALORES SUGERIDOS</p>
+                    <div class="valores-sugeridos">
+                        <button class="valor-btn" data-valor="10">R$ 10</button>
+                        <button class="valor-btn" data-valor="25">R$ 25</button>
+                        <button class="valor-btn" data-valor="50">R$ 50</button>
+                        <button class="valor-btn" data-valor="100">R$ 100</button>
+                    </div>
+
+                    <button class="btn btn-doacao" id="btn-continuar">
+                        Continuar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  me explique o que esta sendo feito aqui!!
+
     <section class="contact" id="contact">
         <h2 class="title"> Nosso <span>Endereço</span></h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.898826727529!2d-48.961968924977285!3d-16.32811298438953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ea47841e7b47d%3A0xc0b361a1d82da24c!2sCruzada%20pela%20Dignidade!5e0!3m2!1spt-BR!2sbr!4v1792874062024!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
@@ -336,6 +408,62 @@
         </a>
     </div>
     </section>
+
+    <script>
+    // Controle das abas de doação
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active de todos
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabPanes.forEach(p => p.classList.remove('active'));
+
+            // Ativa o clicado
+            btn.classList.add('active');
+            const tabId = btn.getAttribute('data-tab');
+            document.getElementById(`tab-${tabId}`).classList.add('active');
+        });
+    });
+
+    // Seleção de valor sugerido
+    const valorBtns = document.querySelectorAll('.valor-btn');
+    const inputCustom = document.getElementById('valor-custom');
+
+    valorBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            valorBtns.forEach(b => b.classList.remove('selected'));
+            btn.classList.add('selected');
+            inputCustom.value = btn.getAttribute('data-valor');
+        });
+    });
+
+    // Botão Continuar (demonstração)
+    document.getElementById('btn-continuar').addEventListener('click', () => {
+        const valor = inputCustom.value || 'não informado';
+        alert(`Demonstração: Você escolheu doar R$ ${valor}.\n\nNa próxima etapa vamos gerar o QR Code e o código Pix Copia e Cola.`);
+    });
+
+    // Botão Copiar código Pix (demonstração)
+    document.getElementById('btn-copiar-pix').addEventListener('click', () => {
+        const codigoDemo = "00020126580014BR.GOV.BCB.PIX0136123e4567-e12b-12d1-a456-426614174000520400005303986540510.005802BR5913CruzadaDignidade6008Anapolis62070503***6304ABCD";
+        
+        navigator.clipboard.writeText(codigoDemo).then(() => {
+            const btn = document.getElementById('btn-copiar-pix');
+            const textoOriginal = btn.textContent;
+            btn.textContent = "Código copiado!";
+            btn.style.background = "#2e7d32";
+            
+            setTimeout(() => {
+                btn.textContent = textoOriginal;
+                btn.style.background = "";
+            }, 2000);
+        }).catch(() => {
+            alert("Código Pix de demonstração:\n\n" + codigoDemo);
+        });
+    });
+</script>
    
 </body>
 

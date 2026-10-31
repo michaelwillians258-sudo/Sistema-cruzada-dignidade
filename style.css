@@ -318,3 +318,232 @@ section {
     align-items: center;
     flex-direction:column;
 }
+
+/* ========== SEÇÃO DOAÇÕES ========== */
+.doacoes {
+    background: url("Árvore Noturna com Lanternas Douradas (1).jpg") center/cover no-repeat;
+    background-color: #1a120b;
+    padding: 8rem 2rem 6rem;
+    text-align: center;
+    position: relative;
+}
+
+.doacoes::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 10, 5, 0.75);
+    z-index: 0;
+}
+
+.doacoes > * {
+    position: relative;
+    z-index: 1;
+}
+
+.doacoes-subtitle {
+    color: #F4E2B8;
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.doacoes-title {
+    font-size: 5.5rem;
+    color: #fffaee;
+    font-weight: 400;
+    letter-spacing: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.doacoes-desc {
+    max-width: 70rem;
+    margin: 0 auto 4rem;
+    color: #e8d9b5;
+    font-size: 1.9rem;
+    line-height: 1.7;
+}
+
+/* Abas */
+.doacoes-tabs {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.tabs-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: transparent;
+    border: 0.15rem solid #b48b22;
+    color: #F4E2B8;
+    padding: 1.2rem 3rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    transition: all 0.25s ease;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+    background: #b48b22;
+    color: #1a120b;
+}
+
+/* Conteúdo das abas */
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Card de doação */
+.doacao-card {
+    background: rgba(25, 18, 10, 0.85);
+    border: 0.15rem solid #b48b22;
+    border-radius: 1rem;
+    padding: 4rem 3rem;
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-icon {
+    color: #b48b22;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.doacao-card h3 {
+    color: #F4E2B8;
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+}
+
+/* QR Code */
+.qr-placeholder {
+    margin: 0 auto 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    display: inline-block;
+}
+
+.qr-placeholder img {
+    display: block;
+    border-radius: 0.4rem;
+}
+
+.qr-note {
+    font-size: 1.3rem;
+    color: #888;
+    margin-top: 0.8rem;
+}
+
+.card-instruction {
+    color: #d4c4a0;
+    font-size: 1.7rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+/* Valor personalizado */
+.valor-personalizado {
+    margin-bottom: 2.5rem;
+}
+
+.valor-personalizado label {
+    display: block;
+    color: #F4E2B8;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.valor-personalizado input {
+    width: 100%;
+    max-width: 220px;
+    padding: 1.2rem;
+    font-size: 2rem;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    border: 0.15rem solid #b48b22;
+    color: #fffaee;
+    border-radius: 0.5rem;
+}
+
+.valores-sugeridos-label {
+    color: #b48b22;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.valores-sugeridos {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.valor-btn {
+    background: transparent;
+    border: 0.15rem solid #b48b22;
+    color: #F4E2B8;
+    padding: 1rem 2.2rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+}
+
+.valor-btn:hover,
+.valor-btn.selected {
+    background: #b48b22;
+    color: #1a120b;
+}
+
+/* Botão principal da doação */
+.btn-doacao {
+    background: #b48b22;
+    color: #1a120b;
+    padding: 1.4rem 4rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.25s;
+}
+
+.btn-doacao:hover {
+    background: #d4a52a;
+    letter-spacing: 0.1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .doacoes-title {
+        font-size: 3.8rem;
+    }
+    .doacao-card {
+        padding: 3rem 2rem;
+    }
+    .tabs-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
