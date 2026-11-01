@@ -1,114 +1,83 @@
-# Sistema Cruzada pela Dignidade
+Sistema Cruzada pela Dignidade 💚
 
-Projeto extensionista de desenvolvimento de uma página web institucional para a **Associação Cruzada pela Dignidade**, organização com atuação em Anápolis–GO. A proposta é organizar e apresentar informações institucionais e projetos da associação, além de facilitar o acesso à área de doações.
+Projeto extensionista desenvolvido para a Associação Cruzada pela Dignidade, localizada em Anápolis–GO.
 
-> **Status atual:** versão inicial/incompleta. Este repositório documenta a estrutura inicial do front-end. As funcionalidades previstas no planejamento não devem ser consideradas concluídas sem implementação e testes verificáveis.
+O objetivo é criar um site institucional para divulgar a história da associação, apresentar seus projetos, destacar seus parceiros e facilitar o acesso aos canais de contato. O projeto também inclui uma área de doações via Pix, atualmente em modo de demonstração.
 
-## Acesso ao projeto
+🌐 Acesso
 
-- **Repositório GitHub:** https://github.com/michaelwillians258-sudo/Sistema-cruzada-dignidade
-- **GitHub Pages (endereço de publicação informado):** https://michaelwillians258-sudo.github.io/Sistema-cruzada-dignidade/
+- Repositório: https://github.com/michaelwillians258-sudo/Sistema-cruzada-dignidade
+- Site publicado: https://michaelwillians258-sudo.github.io/Sistema-cruzada-dignidade/
 
-A página publicada deve ser aberta e testada para confirmar que os arquivos, caminhos e recursos estão funcionando corretamente.
+🛠️ Tecnologias utilizadas
 
-## Objetivo
+- HTML5: estrutura e conteúdo do site.
+- CSS3: estilos, cores, layout e apresentação visual.
+- JavaScript: interações dos projetos e da área de doações.
+- Git e GitHub: controle de versões e armazenamento do código.
+- GitHub Pages: publicação do site.
+- Inteligência Artificial: apoio à programação, à correção de erros e à documentação.
 
-Criar uma página institucional de fácil acesso para apresentar a associação, seu histórico, seus projetos e informações públicas autorizadas, com uma seção destinada a doações.
+✅ Alterações realizadas
 
-## Tecnologias
+- Criação da estrutura inicial da página e do menu de navegação.
+- Inclusão das informações institucionais e dos projetos da associação.
+- Criação de cinco cards de projetos com janelas de detalhes.
+- Implementação de um carrossel com os parceiros.
+- Desenvolvimento da seção de doações com abas, valores sugeridos e campo personalizado.
+- Inclusão de um QR Code e de um código Pix de demonstração.
+- Adição do mapa, do Instagram e do WhatsApp na área de contato.
+- Ajustes no CSS para melhorar a apresentação visual dos componentes.
+- Correções pontuais no HTML e atualização dos arquivos no GitHub.
 
-- **HTML5:** estrutura do conteúdo da página.
-- **CSS3:** estilos e apresentação visual.
-- **JavaScript:** referência prevista no projeto para possíveis interações; o funcionamento de `script.js` precisa ser conferido diretamente no repositório antes de afirmar que há recursos interativos implementados.
+🤖 Uso de Inteligência Artificial
 
-## Estrutura inicial
+Ferramentas de inteligência artificial foram utilizadas como apoio durante o desenvolvimento, auxiliando na análise e na correção do código, na implementação de melhorias, na resolução de dúvidas e na elaboração da documentação.
 
-A estrutura observada no relatório inclui os seguintes arquivos e recursos:
+As sugestões da IA são avaliadas e precisam ser testadas. A ferramenta faz parte do processo de aprendizado, mas não substitui a revisão do código, os testes ou as decisões da equipe.
 
-```text
-Sistema-cruzada-dignidade/
-├── index.html
-├── style.css
-├── script.js
-└── assets/
-    └── img/
-        └── logo2.png
-```
+⚠️ Limitações atuais
 
-> A estrutura acima é uma referência para os arquivos mencionados na documentação. Confira os nomes, a capitalização e a presença de cada arquivo no repositório. Em HTML, prefira caminhos relativos com barras `/`, por exemplo: `assets/img/logo2.png`.
+A área de doações ainda é demonstrativa. O QR Code e o código Pix não realizam pagamentos reais, e a escolha de um valor apenas apresenta um aviso na tela.
 
-## Estado atual e escopo
+Também é necessário concluir os testes de navegação, responsividade e funcionamento geral, além de confirmar as informações institucionais antes da divulgação definitiva.
 
-### Registrado na versão inicial
+📅 Próximas Sprints
 
-- Estrutura básica da página em HTML.
-- Cabeçalho com identificação visual e menu de navegação.
-- Estilização inicial em CSS.
-- Repositório GitHub para armazenamento e versionamento do código.
+Sprint 03 — 26/10/2026 a 08/11/2026
 
-### Previsto no planejamento, ainda sujeito a implementação e validação
+Foco: evolução da área de doações.
 
-- Apresentação do histórico e das informações institucionais.
-- Seção com projetos e ações da associação.
-- Seção de doações.
-- Exibição inicial de um QR Code Pix fixo, desde que fornecido e autorizado pela instituição.
-- Em etapa posterior, opções de valores de doação, valor personalizado, QR Code Pix dinâmico e código Pix Copia e Cola.
-- Adaptação da interface a diferentes tamanhos de tela e dispositivos.
+- Revisar a interface de doações já implementada.
+- Avaliar a geração de QR Code e código Pix Copia e Cola conforme o valor escolhido.
+- Confirmar os dados de recebimento com a instituição.
+- Manter a identificação de demonstração até que a solução seja válida e testada.
 
-**Importante:** os itens previstos acima não são uma declaração de que estejam funcionando na versão atual. A documentação da Sprint 01 registra que a interface está incompleta e que não há evidências suficientes para confirmar navegação completa, responsividade, interações, funcionamento do Pix ou validação formal pela associação.
+Sprint 04 — 09/11/2026 a 22/11/2026
 
-## Pontos técnicos a conferir
+Foco: testes, ajustes e entrega.
 
-Antes de considerar a versão pronta, recomenda-se:
+- Testar os menus, botões, links e janelas dos projetos.
+- Verificar a apresentação do site em computadores e celulares.
+- Corrigir problemas de layout, imagens e navegação.
+- Conferir os dados institucionais e as informações de doação.
+- Registrar evidências dos testes e atualizar a documentação.
 
-1. Conferir se os links do menu levam a seções que realmente existem.
-2. A classe da navegação no HTML e no CSS (o relatório registra divergência entre `.nav` e `.navbar`).
-3. Confirmar o caminho e a exibição do arquivo da logo.
-5. Testar a página em computador e celular.
-6. Não publicar dados pessoais, sensíveis ou informações internas da associação sem autorização.
-7. Confirmar com a instituição os dados e o QR Code Pix antes da disponibilização.
-8. Registrar evidências reais dos testes e, quando aplicável, da validação pela instituição.
+As Sprints 03 e 04 representam o planejamento do projeto. Suas conclusões devem ser registradas após a execução das atividades e a verificação dos resultados.
 
-## Como executar localmente
+🔧 O que ainda pode melhorar
 
-1. Faça o download ou clone este repositório.
-2. Abra a pasta do projeto.
-3. Abra `index.html` em um navegador.
+- Melhorar a acessibilidade e a navegação pelo teclado.
+- Revisar os caminhos das imagens e a organização dos arquivos.
+- Aprimorar a adaptação do layout a diferentes telas.
+- Testar o funcionamento dos recursos em diferentes navegadores.
+- Confirmar as informações e os conteúdos com a associação.
+- Registrar as alterações e os resultados de cada Sprint no relatório.
 
-Para testar a versão publicada, utilize o endereço do GitHub Pages informado acima. Caso algum arquivo não apareça, confira os caminhos relativos, a capitalização dos nomes e se todos os arquivos foram enviados ao repositório.
+📚 Aprendizados
 
-## Evidências e validação
-
-Conforme o relatório técnico da Sprint 01:
-
-- O código inicial em HTML e CSS foi considerado na revisão.
-- A verificação completa da página publicada, da navegação, da logo, da responsividade e das interações permanece pendente de evidência.
-- Capturas de tela de testes em computador e celular devem ser adicionadas somente depois dos testes serem realizados.
-- A validação formal pela Associação Cruzada pela Dignidade não deve ser afirmada sem registro correspondente.
-
-## Transparência sobre o desenvolvimento
-
-Este projeto faz parte de uma atividade acadêmica extensionista. Ferramentas de inteligência artificial foram utilizadas como apoio na elaboração de código e/ou documentação.
-
-## Equipe
-
-Os integrantes registrados na documentação do projeto são:
-
-- Michael Willians Protázio — `michaelwillians258-sudo`
-- Geovana Araujo da Silva — `zequinhaapy`
-- Warley da Silva Oliveira — `KMixzy`
-- Ana Clara Nascimento Marques — `anaclarnascimentomarques-bot`
-
-## Próximas etapas do projeto
-
-- Completar e revisar as seções institucionais.
-- Corrigir e testar os links de navegação e os caminhos dos recursos.
-- Verificar o uso de JavaScript e implementar somente as interações planejadas.
-- Testar a responsividade em diferentes telas.
-- Confirmar e autorizar as informações de doação com a instituição.
-- Anexar evidências reais de execução e validação.
-- Atualizar README à medida que as funcionalidades forem efetivamente implementadas.
+O projeto permite aplicar conhecimentos de HTML, CSS, JavaScript, Git e GitHub, além de desenvolver habilidades de resolução de problemas, testes e utilização responsável da inteligência artificial.
 
 ---
 
-**Projeto acadêmico extensionista — Associação Cruzada pela Dignidade.**
+Projeto acadêmico extensionista — Associação Cruzada pela Dignidade.
