@@ -34,8 +34,6 @@ O objetivo é criar um site institucional para divulgar a história da associaç
 
 Ferramentas de inteligência artificial foram utilizadas como apoio durante o desenvolvimento, auxiliando na análise e na correção do código, na implementação de melhorias, na resolução de dúvidas e na elaboração da documentação.
 
-As sugestões da IA são avaliadas e precisam ser testadas. A ferramenta faz parte do processo de aprendizado, mas não substitui a revisão do código, os testes ou as decisões da equipe.
-
 ⚠️ Limitações atuais
 
 A área de doações ainda é demonstrativa. O QR Code e o código Pix não realizam pagamentos reais, e a escolha de um valor apenas apresenta um aviso na tela.
