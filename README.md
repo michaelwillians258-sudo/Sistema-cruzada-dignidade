@@ -1,81 +1,74 @@
-Sistema Cruzada pela Dignidade 💚
+# Plataforma Institucional – Associação Cruzada pela Dignidade
 
-Projeto extensionista desenvolvido para a Associação Cruzada pela Dignidade, localizada em Anápolis–GO.
+Portal institucional em página única (*single-page*) desenvolvido como projeto extensionista do curso de Análise e Desenvolvimento de Sistemas (UniEVANGÉLICA) para a **Associação Cruzada pela Dignidade**, em Anápolis – GO.
 
-O objetivo é criar um site institucional para divulgar a história da associação, apresentar seus projetos, destacar seus parceiros e facilitar o acesso aos canais de contato. O projeto também inclui uma área de doações via Pix, atualmente em modo de demonstração.
+🔗 **Acesse o site online (GitHub Pages):** https://michaelwillians258-sudo.github.io/Sistema-cruzada-dignidade/
 
-🌐 Acesso
-
-- Repositório: https://github.com/michaelwillians258-sudo/Sistema-cruzada-dignidade
-- Site publicado: https://michaelwillians258-sudo.github.io/Sistema-cruzada-dignidade/
-
-🛠️ Tecnologias utilizadas
-
-- HTML5: estrutura e conteúdo do site.
-- CSS3: estilos, cores, layout e apresentação visual.
-- JavaScript: interações dos projetos e da área de doações.
-- Git e GitHub: controle de versões e armazenamento do código.
-- GitHub Pages: publicação do site.
-- Inteligência Artificial: apoio à programação, à correção de erros e à documentação.
-
-✅ Alterações realizadas
-
-- Criação da estrutura inicial da página e do menu de navegação.
-- Inclusão das informações institucionais e dos projetos da associação.
-- Criação de cinco cards de projetos com janelas de detalhes.
-- Implementação de um carrossel com os parceiros.
-- Desenvolvimento da seção de doações com abas, valores sugeridos e campo personalizado.
-- Inclusão de um QR Code e de um código Pix de demonstração.
-- Adição do mapa, do Instagram e do WhatsApp na área de contato.
-- Ajustes no CSS para melhorar a apresentação visual dos componentes.
-- Correções pontuais no HTML e atualização dos arquivos no GitHub.
-
-🤖 Uso de Inteligência Artificial
-
-Ferramentas de inteligência artificial foram utilizadas como apoio durante o desenvolvimento, auxiliando na análise e na correção do código, na implementação de melhorias, na resolução de dúvidas e na elaboração da documentação.
-
-⚠️ Limitações atuais
-
-A área de doações ainda é demonstrativa. O QR Code e o código Pix não realizam pagamentos reais, e a escolha de um valor apenas apresenta um aviso na tela.
-
-Também é necessário concluir os testes de navegação, responsividade e funcionamento geral, além de confirmar as informações institucionais antes da divulgação definitiva.
-
-📅 Próximas Sprints
-
-Sprint 03 — 26/10/2026 a 08/11/2026
-
-Foco: evolução da área de doações.
-
-- Revisar a interface de doações já implementada.
-- Avaliar a geração de QR Code e código Pix Copia e Cola conforme o valor escolhido.
-- Confirmar os dados de recebimento com a instituição.
-- Manter a identificação de demonstração até que a solução seja válida e testada.
-
-Sprint 04 — 09/11/2026 a 22/11/2026
-
-Foco: testes, ajustes e entrega.
-
-- Testar os menus, botões, links e janelas dos projetos.
-- Verificar a apresentação do site em computadores e celulares.
-- Corrigir problemas de layout, imagens e navegação.
-- Conferir os dados institucionais e as informações de doação.
-- Registrar evidências dos testes e atualizar a documentação.
-
-As Sprints 03 e 04 representam o planejamento do projeto. Suas conclusões devem ser registradas após a execução das atividades e a verificação dos resultados.
-
-🔧 O que ainda pode melhorar
-
-- Melhorar a acessibilidade e a navegação pelo teclado.
-- Revisar os caminhos das imagens e a organização dos arquivos.
-- Aprimorar a adaptação do layout a diferentes telas.
-- Testar o funcionamento dos recursos em diferentes navegadores.
-- Confirmar as informações e os conteúdos com a associação.
-- Registrar as alterações e os resultados de cada Sprint no relatório.
-
-📚 Aprendizados
-
-O projeto permite aplicar conhecimentos de HTML, CSS, JavaScript, Git e GitHub, além de desenvolver habilidades de resolução de problemas, testes e utilização responsável da inteligência artificial.
+🔗 **Repositório:** https://github.com/michaelwillians258-sudo/Sistema-cruzada-dignidade
 
 ---
 
-Projeto acadêmico extensionista — Associação Cruzada pela Dignidade.
+## 📋 Sobre o Projeto
+
+O sistema apresenta a identidade institucional, os projetos sociais realizados, a rede de parceiros, a localização da entidade e um módulo interativo de apoio financeiro voltado à comunidade.
+
+### Funcionalidades Implementadas (Versão 3.0 / Sprint 03)
+* **Navegação Responsiva:** Cabeçalho fixo com menu hambúrguer (`#menu-btn`) adaptado para dispositivos móveis e tablets (`<= 768px`).
+* **Apresentação Institucional:** Seções *Início* e *Sobre Nós* detalhando a missão e atuação social da entidade.
+* **Catálogo de Ações e Projetos:** Grade responsiva com modais interativos (`<dialog>`) exibindo detalhes das campanhas realizadas.
+* **Carrossel de Parceiros:** Exibição contínua das instituições apoiadoras com suporte à redução de movimento (`prefers-reduced-motion`).
+* **Módulo de Doações via Pix (Modo Simulação):** Interface em abas permitindo copiar um código Pix Copia e Cola de demonstração ou selecionar/inserir valores personalizados para simulação de contribuição.
+* **Localização e Contato:** Mapa incorporado via Google Maps e links diretos para Instagram e WhatsApp.
+
+## ⚠️ Limitações Atuais e Bugs Conhecidos (Escopo MVP)
+
+Por se tratar de uma aplicação estática (*front-end* puro) hospedada no GitHub Pages, o sistema possui restrições técnicas e ajustes mapeados no quadro Trello da equipe:
+
+1. **Operação Exclusiva em Modo de Simulação:** Não há servidor *back-end*, banco de dados ou integração com APIs bancárias/PSP. O QR Code e o código *Pix Copia e Cola* são estáticos de demonstração, e o fluxo de valor personalizado exibe apenas uma confirmação simulada.
+2. **Bug – Reconhecimento e Formatação de Números Decimais no Campo Personalizado (`RF04`):**
+   * **Rastreamento:** [Card #31 – Ajuste no campo de valor personalizado: reconhecimento de números decimais](https://trello.com/c/w5WVqTH3/31-rf04-ajuste-no-campo-de-valor-personalizado-reconhecimento-de-n%C3%BAmeros-decimais).
+   * **Comportamento atual:** O campo `<input type="number" step="0.01">` apresenta inconsistências entre teclados móveis/navegadores na entrada de separadores decimais (vírgula `,` vs. ponto `.`), além de não formatar o valor monetário em padrão brasileiro (`R$ 0,00`) nem bloquear entradas inválidas antes da confirmação.
+3. **Sem Persistência de Histórico ou Comprovantes:** As simulações de doação e interações do usuário não são armazenadas após o recarregamento da página.
+4. **Dependência de Serviços Externos:** O mapa de localização (Google Maps), os ícones externos e a geração da imagem de QR Code de demonstração dependem de conexão ativa com a internet e disponibilidade de terceiros.
+
+
+## 🚀 O Que Pode Melhorar (Próximos Passos)
+
+* **Correção do `RF04` (Máscara Monetária e Validação):** Substituir o tratamento simples do input type="number" por uma máscara de moeda em JavaScript Formato BRL que reconheça vírgula e ponto corretamente e valide valores mínimos (>= R$ 1,00).
+* **Geração Dinâmica de Payload Pix (EMV):** Gerar o código *Pix Copia e Cola* e o QR Code dinamicamente no front-end conforme o valor digitado pelo usuário na aba personalizada.
+* **Polimento de Interface e Conteúdo:** Corrigir a duplicação textual no título do segundo card de projeto e vincular o botão *"Saiba Mais"* da seção *Sobre Nós* a um modal institucional dedicado.
+
+---
+
+## 📌 Histórico de Versões (Tags)
+
+* **`v1.0` (Sprint 01):** Estrutura base em HTML5/CSS3, cabeçalho, seções institucionais e contatos.
+* **`v2.0` (Sprint 02):** Inclusão da grade de projetos com modais, carrossel de parceiros e estrutura visual da seção de doações.
+* **`v3.0` (Sprint 03):** Correção da responsividade mobile (`menu-btn`), atualização da documentação de escopo simulado e mapeamento de melhorias do `RF04`
+
+> ⚠️ **Nota de Escopo:** Este projeto é um MVP (*Minimum Viable Product*) estático hospedado no GitHub Pages, sem servidor back-end ou integração bancária. Todas as interações na seção de **Doações** operam exclusivamente em **modo de simulação**.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **HTML5** (estrutura semântica e modal nativo `<dialog>`)
+* **CSS3** (variáveis CSS, Flexbox, CSS Grid, animações e *Media Queries* para responsividade mobile)
+* **JavaScript Vanilla** (controle do menu mobile, alternância de abas, seleção de valores e cópia para área de transferência)
+* **Git & GitHub Pages** (controle de versão por tags `v1.0`, `v2.0`, `v3.0` e hospedagem estática)
+* **Trello** (gestão ágil do backlog, sprints e rastreamento de bugs)
+* **Inteligência Artificial** (utilizadas como apoio durante o desenvolvimento, auxiliando na análise e na correção do código, na implementação de melhorias)
+
+---
+
+## 📁 Estrutura de Arquivos
+
+```text
+Sistema-cruzada-dignidade/
+├── index.html      # Estrutura principal da aplicação
+├── style.css       # Estilização e regras responsivas (desktop, tablet e mobile)
+├── script.js       # Lógica de interatividade (menu mobile, modais, abas e simulação Pix)
+└── README.md       # Documentação do repositório
+```
+---
+*Projeto acadêmico extensionista — Associação Cruzada pela Dignidade.*
