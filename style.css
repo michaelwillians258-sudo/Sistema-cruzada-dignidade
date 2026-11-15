@@ -12,6 +12,7 @@
     padding: 0;
     outline: 0;
     border: 0;
+    box-sizing: border-box;
     text-decoration: none;
     transition: linear 0.2s;
     font-family: "Cormorant Garamond", serif;
@@ -19,6 +20,12 @@
 
 body {
     background-color: var(--bg);
+    overflow-x: hidden;
+}
+
+img,
+iframe {
+    max-width: 100%;
 }
 
 section {
@@ -47,7 +54,26 @@ section[id] {
     justify-content: space-between;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+}
 
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.45rem;
+    width: 4.4rem;
+    height: 4.4rem;
+    margin-left: auto;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    display: block;
+    width: 2.4rem;
+    height: 0.22rem;
+    margin: 0 auto;
+    background: #F4E2B8;
 }
 
 .navbar a {
@@ -98,7 +124,6 @@ section[id] {
     display: flex;
     align-items: center;
     min-height: 100vh;
-
 }
 
 .content {
@@ -116,7 +141,6 @@ section[id] {
     font-weight: 100;
     line-height: 1.9;
     padding: 1rem 0;
-
 }
 
 .title {
@@ -127,16 +151,28 @@ section[id] {
     margin-bottom: 2rem;
 }
 
-
 .title span {
     color: #fffaee;
     text-transform: uppercase;
 }
 
+/* ========== SOBRE ========== */
 .about .row {
     display: flex;
     align-items: center;
     background-color: oklab(25.029% 0.02339 0.03539);
+}
+
+.about .container-image {
+    flex: 0 0 38%;
+}
+
+.about .container-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 46rem;
+    object-fit: cover;
 }
 
 .about .row .content {
@@ -146,14 +182,12 @@ section[id] {
 .about .row .content h3 {
     font-size: 3rem;
     color: aliceblue;
-
 }
 
 .about .row .content p {
     font-size: 1.8rem;
     color: #fffaee;
     padding: 1rem;
-
 }
 
 .body {
@@ -163,14 +197,14 @@ section[id] {
     background: #f4f4f7;
 }
 
+/* ========== PROJETOS ========== */
 .projects .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 4rem;
-
 }
 
-.projects .box-container .box{
+.projects .box-container .box {
     text-align: center;
     border: 0.1rem solid #f4f4f7;
     padding: 1rem;
@@ -181,32 +215,33 @@ section[id] {
     align-items: center;
 }
 
-.box img{
+.box img {
     height: 20rem;
     width: 20rem;
-    object-fit: cover;   
+    object-fit: cover;
 }
 
-.projects .box-container .box h3{
-    color:#F4E2B8 ;
-    font-size:2.5rem;
+.projects .box-container .box h3 {
+    color: #F4E2B8;
+    font-size: 2.5rem;
     padding: 1rem 0.5rem;
 }
 
 .projects .box-container .box .btn {
     margin-top: auto;
 }
-.projects .box-container .box .projeto{
-    color:#fffaee;
+
+.projects .box-container .box .projeto {
+    color: #fffaee;
     font-size: 1.8rem;
     padding: 1rem 0;
 }
 
-.projects .box-container .box:hover{
+.projects .box-container .box:hover {
     background-color: #b48b22;
 }
 
-.projects .box-container .box:hover>*{
+.projects .box-container .box:hover>* {
     color: #000;
 }
 
@@ -214,18 +249,21 @@ section[id] {
     display: none;
 }
 
+/* ========== MODAL ========== */
 #modal {
+    position: fixed;
+    inset: 0;
     margin: auto;
     width: 90%;
     max-width: 80rem;
     max-height: 85vh;
     overflow-y: auto;
+    overscroll-behavior: contain;
     padding: 3rem;
     background: oklab(25.029% 0.02339 0.03539);
     border: 0.2rem solid var(--main-color);
     color: #fffaee;
     text-transform: none;
-    position: relative;
 }
 
 #modal::backdrop {
@@ -254,6 +292,7 @@ section[id] {
     cursor: pointer;
 }
 
+/* ========== PARCEIROS ========== */
 .parcerias .carousel {
     overflow: hidden;
     -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
@@ -291,7 +330,7 @@ section[id] {
     padding-top: 2rem;
 }
 
-.parcerias .partner p{
+.parcerias .partner p {
     font-size: 1.4rem;
     padding: 0.8rem;
     color: #fdfdfd;
@@ -317,13 +356,21 @@ section[id] {
     }
 }
 
-.contact{
+/* ========== CONTATO ========== */
+.contact {
     display: flex;
     align-items: center;
-    flex-direction:column;
+    flex-direction: column;
 }
 
-/* ========== SEÇÃO DOAÇÕES ========== */
+.contact .mapa {
+    width: 100%;
+    max-width: 60rem;
+    height: 45rem;
+    border: 0;
+}
+
+/* ========== DOAÇÕES ========== */
 .doacoes {
     background: url("Árvore Noturna com Lanternas Douradas (1).jpg") center/cover no-repeat;
     background-color: #1a120b;
@@ -341,7 +388,7 @@ section[id] {
     z-index: 0;
 }
 
-.doacoes > * {
+.doacoes>* {
     position: relative;
     z-index: 1;
 }
@@ -400,7 +447,6 @@ section[id] {
     color: #1a120b;
 }
 
-/* Conteúdo das abas */
 .tab-pane {
     display: none;
     animation: fadeIn 0.4s ease;
@@ -412,7 +458,7 @@ section[id] {
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
 /* Card de doação */
@@ -483,7 +529,7 @@ section[id] {
     padding: 1.2rem;
     font-size: 2rem;
     text-align: center;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     border: 0.15rem solid #b48b22;
     color: #fffaee;
     border-radius: 0.5rem;
@@ -521,7 +567,6 @@ section[id] {
     color: #1a120b;
 }
 
-/* Botão principal da doação */
 .btn-doacao {
     background: #b48b22;
     color: #1a120b;
@@ -539,16 +584,238 @@ section[id] {
     letter-spacing: 0.1rem;
 }
 
-/* Responsivo */
+/* ========== RESPONSIVO (celular e tablet) ========== */
 @media (max-width: 768px) {
+    section {
+        padding: 2.8rem 1.6rem;
+    }
+
+    .header section {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .logo img {
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        order: 4;
+        padding: 0.6rem 0 0.4rem;
+    }
+
+    .navbar.aberto {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 0;
+        padding: 1.4rem 0.4rem;
+        text-align: center;
+        border-bottom: 0.1rem solid rgba(244, 226, 184, 0.25);
+    }
+
+    .navbar a:hover {
+        font-size: 1.8rem;
+        padding-bottom: 1.4rem;
+    }
+
+    .icons img {
+        width: 36px;
+        height: 36px;
+        margin: 0.4rem;
+    }
+
+    .home-conteiner section {
+        align-items: flex-end;
+        min-height: 100svh;
+        padding-top: 9rem;
+        padding-bottom: 3rem;
+    }
+
+    .home-conteiner .content {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.6rem;
+        background: rgba(15, 10, 5, 0.55);
+    }
+
+    .content h3,
+    .title,
+    .projects .box-container .box h3,
+    .doacao-card h3 {
+        overflow-wrap: break-word;
+        line-height: 1.25;
+    }
+
+    .content h3 {
+        font-size: 2.3rem;
+    }
+
+    .content p {
+        font-size: 1.7rem;
+        line-height: 1.5;
+    }
+
+    .title {
+        font-size: 2.8rem;
+    }
+
+    .about .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about .container-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .about .container-image img {
+        width: 100%;
+        height: 24rem;
+        max-height: none;
+        object-fit: cover;
+    }
+
+    .about .row .content {
+        width: 100%;
+        padding: 1.6rem 0.4rem 0.4rem;
+    }
+
+    .about .row .content h3 {
+        font-size: 2.4rem;
+    }
+
+    .about .row .content p {
+        font-size: 1.7rem;
+        padding: 0.8rem 0;
+    }
+
+    .projects .box-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .projects .box-container .box {
+        max-width: 100%;
+    }
+
+    .projects .box-container .box h3 {
+        font-size: 2.1rem;
+    }
+
+    .box img {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .parcerias .partner {
+        flex-basis: 18rem;
+        margin-right: 1.6rem;
+    }
+
+    .contact .mapa {
+        width: 100%;
+        height: 28rem;
+    }
+
+    .doacoes {
+        padding: 6rem 1.6rem 4rem;
+    }
+
+    .doacoes-subtitle {
+        letter-spacing: 0.12rem;
+    }
+
     .doacoes-title {
-        font-size: 3.8rem;
+        font-size: 3.2rem;
+        letter-spacing: 0.1rem;
     }
+
+    .doacoes-desc {
+        font-size: 1.7rem;
+        margin-bottom: 2.4rem;
+    }
+
     .doacao-card {
-        padding: 3rem 2rem;
+        width: 100%;
+        padding: 2.4rem 1.4rem;
     }
+
     .tabs-nav {
         flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tab-btn,
+    .btn,
+    .btn-doacao {
+        width: 100%;
+        text-align: center;
+    }
+
+    .valor-personalizado input {
+        max-width: 100%;
+    }
+
+    #modal {
+        width: calc(100% - 1.6rem);
+        padding: 4.5rem 1.6rem 2rem;
+    }
+
+    #modal h3 {
+        font-size: 2.2rem;
+        padding-right: 2rem;
+    }
+
+    #modal-texto {
+        font-size: 1.7rem;
+    }
+
+    .footer .share {
+        display: flex;
+        justify-content: center;
         align-items: center;
+        gap: 2rem;
+    }
+
+    .share img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2.4rem;
+    }
+
+    .content h3 {
+        font-size: 2rem;
+    }
+
+    .doacoes-title {
+        font-size: 2.8rem;
+        letter-spacing: 0.06rem;
+    }
+
+    .tab-btn {
+        font-size: 1.6rem;
+        padding: 1.2rem 1rem;
+    }
+
+    .valor-btn {
+        flex: 1 1 calc(50% - 1.2rem);
     }
 }
